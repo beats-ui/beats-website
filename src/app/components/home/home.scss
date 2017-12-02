@@ -1,0 +1,73 @@
+.beats-header{
+  font-family: 'Lobster', cursive;
+  margin: 0;
+  padding: 1rem;
+  background: darken($primary, 30%);
+  color: white;
+  font-weight: lighter;
+
+  svg{
+    height: 1.4rem;
+    width: 1.4rem;
+    fill: white;
+  }
+
+  .github, .profile{
+    padding-left: 1rem;
+    float: right;
+    
+    a{
+      color: white;
+      
+      svg{
+        height: 1rem;
+        widows: 1rem;
+      }
+      span{
+        font-size: 0.8rem;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .version{
+        vertical-align: middle;
+        padding-top: 4px;
+        display: inline-block;
+      }
+      
+    }
+  }
+
+}
+
+.tabs.beats-subheader{
+  background: darken($primary, 30%);
+  color: white;
+  .links{
+    border: 0;
+    .link{
+      &.active{
+        border-bottom-color: #43c9e8;
+      }
+
+      &:active{
+        background-color: darken($primary, 40%);
+      }
+    }
+  }
+}
+
+.beats-body{
+  padding: 1rem;
+  height: calc( 100vh - 110px );
+  overflow: auto;
+
+  > .tabs{
+    .content{
+      height: calc( 100% - 38px );
+    }
+  }
+}
+
+[hljs]{
+  font-size: 1.25rem;
+}

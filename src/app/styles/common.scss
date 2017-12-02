@@ -1,0 +1,23 @@
+@import '../../../bower_components/beats-core/build/scss/beats-core';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: $root-font;
+}
+
+.container {
+  margin: 1rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 5px;
+}
+
+.box-shadow {
+  box-shadow: $shadow-white;
+}

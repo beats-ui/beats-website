@@ -1,0 +1,52 @@
+<div>
+
+  <h1 class="beats-header">
+    <span ng-include="'assets/icons/beats.svg'"></span>
+    Beats.css
+    
+    <span class="github">
+      <a href="https://github.com/ashvin777/beats" target="_new">
+        <span ng-include="'assets/icons/github-logo.svg'"></span>
+        <span class="version">v1.0 - pre-alpha</span>
+      </a>
+    </span>
+
+    <span class="profile">
+        <a href="https://github.com/ashvin777/" target="_new">
+          <span class="version">@ashvin</span>
+        </a>
+      </span>
+  </h1>
+
+  <div class="tabs beats-subheader">
+    <ul class="links">
+      <li class="link" ng-repeat="cmp in $home.components" ng-click="$home.openTab(cmp)" ng-class="{ active : $home.component == cmp }">{{cmp}}</li>
+    </ul>
+  </div>
+
+  <div class="beats-body">
+
+    <div class="tabs">
+
+      <div class="content">
+
+        <forms-component ng-show="$home.component == 'Form'"></forms-component>
+
+        <tabs-component ng-show="$home.component == 'Tabs'"></tabs-component>
+
+        <card-component ng-show="$home.component == 'Card'"></card-component>
+
+        <buttons-component ng-show="$home.component == 'Buttons'"></buttons-component>
+
+        <dropdown-component ng-show="$home.component == 'Dropdown'"></dropdown-component>
+
+        <tooltip-component ng-show="$home.component == 'Tooltip'"></tooltip-component>
+
+        <modal-component ng-show="$home.component == 'Modal'"></modal-component>
+
+        <slider-component ng-show="$home.component == 'Slider'"></slider-component>
+        
+      </div>
+    </div>
+  </div>
+</div>

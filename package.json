@@ -7,7 +7,12 @@
   "scripts": {
     "start": "gulp serve",
     "test": "gulp test",
-    "build": "gulp build"
+    "build": "gulp build",
+    "dist": "gulp serve:dist",
+    "postinstall": "bower install",
+    "update": "npm update; bower update",
+    "test-build": "istanbul cover --report html --report cobertura jasmine-runner.js",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
   "devDependencies": {
     "estraverse": "~4.1.0",
